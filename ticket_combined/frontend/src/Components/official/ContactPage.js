@@ -50,7 +50,7 @@ function ContactPage() {
       </div>
       <div className="right-panel">
         <h2>Contact Us</h2>
-        <form method="POST" onClick={handleSubmit}>
+        <form method="POST">
           <div className="form-group">
             <label htmlFor="firstName">First Name:</label>
             <input
@@ -124,7 +124,7 @@ function ContactPage() {
               onChange={handleChange}
             />
           </div>
-          <button type="submit">Send Message</button>
+          <button  onClick={handleSubmit} type="submit">Send Message</button>
         </form>
       </div>
     </div>
