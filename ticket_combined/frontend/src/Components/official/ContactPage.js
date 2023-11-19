@@ -50,7 +50,7 @@ function ContactPage() {
       </div>
       <div className="right-panel">
         <h2>Contact Us</h2>
-        <form action="https://getform.io/f/62e547d5-70e5-4f74-ab97-03bfef276db7" method="POST">
+        <form method="POST" onClick={handleSubmit}>
           <div className="form-group">
             <label htmlFor="firstName">First Name:</label>
             <input
