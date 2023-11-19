@@ -28,7 +28,7 @@ const Dashboard = () => {
 
   const fetchTicketInfo = (email) => {
     return new Promise((resolve, reject) => {
-      fetch(`https://tickets-backend-aiib.onrender.com/ticketinfo?email=${email}`)
+      fetch(`http://localhost:5056/ticketinfo?email=${email}`)
         .then((response) => response.json())
         .then((data) => {
           console.log("Data received:", data);

@@ -33,7 +33,7 @@ function TicketForm() {
 
   let handleCreateTicket = (event) => {
     let obj = { email, type, priority, details };
-    const url = "https://tickets-backend-aiib.onrender.com/create-ticket";
+    const url = "http://localhost:5056/ticketinfo/create-ticket";
     axios
       .post(url, obj)
       .then((res) => {
